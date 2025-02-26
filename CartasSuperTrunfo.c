@@ -51,10 +51,10 @@ int main() {
 
     float densidade1 = populacao1 / area1;
     float densidade2 = populacao2 / area2;
-    float capital1 = pib1 / populacao1; 
-    float capital2 = pib2 / populacao2; 
-    float super1 = populacao1 + area1 + pib1 + pontos_turisticos1 + capital1 + densidade1;
-    float super2 = populacao2 + area2 + pib2 + pontos_turisticos2 + capital2 + densidade2;
+    float capita1 = pib1 / populacao1; 
+    float capita2 = pib2 / populacao2; 
+    float super1 = populacao1 + area1 + pib1 + pontos_turisticos1 + capita1 + densidade1;
+    float super2 = populacao2 + area2 + pib2 + pontos_turisticos2 + capita2 + densidade2;
 
     // Exibição dos dados cadastrados
     printf("\n===== Dados das Cidades Cadastradas =====\n");
@@ -69,7 +69,7 @@ int main() {
     printf("PIB: %f bilhões\n", pib1);
     printf("Pontos turísticos: %d\n", pontos_turisticos1);
     printf("Densidade Populacional: %f\n", densidade1);
-    printf("Pib por capital: %f\n", capital1);
+    printf("Pib per capita: %f\n", capita1);
     printf("super poder: %f\n", super1);
 
     printf("\nCidade 2:\n");
@@ -82,7 +82,7 @@ int main() {
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos turísticos: %d\n", pontos_turisticos2);
     printf("Densidade Populacional: %f\n", densidade2);
-    printf("Pib por capital: %f\n", capital2);
+    printf("Pib per capita: %f\n", capita2);
     printf("super poder: %f\n", super2);
 
     printf("\n*** Comparação de Cartas: ***\n");
@@ -92,7 +92,7 @@ int main() {
     printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2);
     printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pontos_turisticos1 > pontos_turisticos2);
     printf("Densidade Populacional: Carta 2 venceu (%d)\n", densidade1 > densidade2);
-    printf("PIB per Capita: Carta 1 venceu (%d)\n", capital1 > capital2);
+    printf("PIB per Capita: Carta 1 venceu (%d)\n", capita1 > capita2);
     printf("Super Poder: Carta 1 venceu (%d)\n", super1 > super2);
 
     return 0;
